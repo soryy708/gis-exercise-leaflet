@@ -1,0 +1,52 @@
+$sidePanelWidth: 16em;
+
+.sidePanel {
+    color: #224;
+    background-color: #EEE;
+    box-shadow: 0 0 8px #7B7B7B;
+    z-index: 1;
+    width: $sidePanelWidth;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .page {
+        width: 100%;
+        max-width: 0;
+        overflow: hidden;
+        transition: max-width 0.3s;
+        margin: 0.25em 0.75em;
+
+        &.active {
+            max-width: $sidePanelWidth;
+        }
+
+        &.editing .actions {
+            display: flex;
+            flex-direction: row;
+
+            button {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.geoJsons {
+    .geoJson {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .name {
+            flex-grow: 1;
+            overflow-x: auto;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+}

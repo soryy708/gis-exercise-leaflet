@@ -1,0 +1,54 @@
+{
+    "engines": {
+        "node": ">9.9.0"
+    },
+    "browserslist": [
+        "last 2 major versions"
+    ],
+    "scripts": {
+        "start": "webpack serve",
+        "build": "node script/build/build",
+        "build-dev": "cross-env BUILD_ENV=dev npm run build",
+        "build-prod": "cross-env BUILD_ENV=production npm run build",
+        "watch": "node script/build/watch",
+        "lint": "npm run lint-js && npm run lint-css",
+        "lint-js": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "lint-css": "stylelint ."
+    },
+    "devDependencies": {
+        "@types/leaflet": "^1.7.0",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.3",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "autoprefixer": "^10.2.5",
+        "copy-webpack-plugin": "^8.1.1",
+        "cross-env": "^7.0.3",
+        "css-loader": "^5.2.2",
+        "eslint": "^7.24.0",
+        "eslint-plugin-compat": "^3.9.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-react": "^7.23.2",
+        "file-loader": "^6.2.0",
+        "node-sass": "^5.0.0",
+        "postcss": "^8.2.10",
+        "postcss-loader": "^5.2.0",
+        "sass-loader": "^11.0.1",
+        "style-loader": "^2.0.0",
+        "stylelint": "^13.12.0",
+        "stylelint-config-sass-guidelines": "^8.0.0",
+        "stylelint-config-standard": "^21.0.0",
+        "ts-loader": "^9.0.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.33.2",
+        "webpack-cli": "^4.6.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "dependencies": {
+        "leaflet": "^1.7.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
+}

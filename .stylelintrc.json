@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-sass-guidelines"
+    ],
+    "rules": {
+        "indentation": 4,
+        "selector-class-pattern": "[a-z][a-zA-Z]*",
+        "max-nesting-depth": null,
+        "selector-list-comma-newline-after": null,
+        "order/properties-alphabetical-order": null,
+        "no-descending-specificity": null,
+        "no-eol-whitespace": null,
+        "selector-no-qualifying-type": null,
+        "color-named": null,
+        "color-hex-case": "upper",
+        "selector-max-id": null,
+        "selector-max-compound-selectors": null,
+        "scss/dollar-variable-pattern": "[a-z][a-zA-Z]*",
+        "scss/at-extend-no-missing-placeholder": null
+    }
+}

@@ -1,0 +1,25 @@
+.colorPicker {
+    .control {
+        position: relative;
+        padding-top: 0.5em;
+
+        label {
+            position: absolute;
+            font-size: 0.75em;
+            top: 0;
+            left: 0;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    .preview {
+        height: 1em;
+        margin-top: 0.5em;
+        box-shadow: 0 0 4px #000 inset;
+        transition: background-color 0.5s;
+    }
+}
