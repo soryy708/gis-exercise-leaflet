@@ -109,7 +109,7 @@ if (process.env.BUILD_ENV === 'production') {
         mode: 'production',
         output: {
             filename: config.output.filename,
-            path: path.resolve(__dirname, 'dist', 'prod', config.output.pathEnd),
+            path: path.resolve(__dirname, 'docs', config.output.pathEnd),
             libraryTarget: config.output.libraryTarget,
         }
     }));
